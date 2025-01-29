@@ -1,0 +1,26 @@
+Students App 
+- Dashboard for enrolled courses 
+- Submitting assignments 
+- Viewing grades and course material 
+- Communicating with teachers 
+
+Teachers App 
+- Creating and managing courses 
+- Uploading materials and assignments 
+- Grading student submission 
+- Viewing student progress
+
+Admins App 
+- Managing users 
+- Monitoring site activity 
+- Assigning roles 
+
+Courses App 
+- Models for courses, assignments, materials 
+- Shared views 
+
+Users App 
+- Custom user model 
+- Login/logout, profile management 
+- Shared authentification for role-based views 
+
