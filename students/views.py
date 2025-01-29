@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.http import HttpResponseForbidden, HttpResponseRedirect
 from courses.models import Course
+from users.models import User
 from django.urls import reverse
 
 
@@ -18,7 +19,6 @@ def student_dashboard(request):
 
   
     courses = Course.objects.filter(students=request.user)
-
     return render(request, 'students/dashboard.html', {
         'courses': courses
     })
