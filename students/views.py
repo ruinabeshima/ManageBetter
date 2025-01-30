@@ -16,9 +16,5 @@ def student_dashboard(request):
 
     if request.user.role != 'student':
         return HttpResponseForbidden("You are not authorized to view this page.")
-
-  
-    courses = Course.objects.filter(students=request.user)
-    return render(request, 'students/dashboard.html', {
-        'courses': courses
-    })
+    
+    return render(request, 'students/dashboard.html')
